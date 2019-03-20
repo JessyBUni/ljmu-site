@@ -1,0 +1,31 @@
+body{
+  font-family: serif;
+  background-color: navy;
+}
+head{
+  position:absolute;
+  left:50%;
+  transform: translate(0%, -50%)
+}
+
+.box {
+  vertical-align: middle;
+  background-color: white;
+  color: navy;
+  height : 200px;
+  width: 480px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%)
+/*margin-right: -50%; /*this is half of width of your div*/
+}
+h1{
+  font-size: 40px;
+  color: navy;
+  padding: 10px solid navy;
+
+}
+p{
+  color: black;
+}
