@@ -1,13 +1,39 @@
 
 html{
-background-color: #a2afbf;
+background-color: white;
 }
 header{
-  height: 50pt;
+  font-size:  50pt;
+  font-family: 'Permanent Marker', cursive;
+  padding-left: 10pt;
+  padding-right: 10pt;
+
+}
+h1{
+  padding-left: 10pt;
+  padding-right: 10pt;
+  font-size: 20pt;
+}
+h2 {
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
+.headerGrid{
+  display: grid;
+  grid-template-columns: 25% 75% ;
+  grid-gap: 10px;
+  padding: 0px;
 }
 .menuHeaders{
-  background-color: #47334e;
-  height: 50pt;
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+background-color: black;
+  
+}
+.menuHeader{
+  color: white;
+  vertical-align:middle;
+  height: 40pt;
 }
 .cat-grid {
   display: grid;
@@ -16,25 +42,54 @@ header{
   padding: 10px;
 }
 .adviceOrientation{
+
   background-color: #37738d;
   background-image: url("background_blue.tif");
   color: #f19d42;
-  font-size: 20pt;
   grid-column: 1/4;
 }
 .adviceOrientationOptions{
-
   font-size: 15pt;
-  color: #214a5c;
+  color: #8A3100;
 }
 .StudyEssentials{
   background-color: #8d2323;
   background-image: url("background_pink.tif");
-  color : #d48d99;
-  font-size: 20pt;
+  color : #42EB44;
   grid-column: 3/6;
 }
 .StudyEssentialsOptions{
   font-size: 15pt;
+  color: #315200;
+}
+.yourFuture{
+  background-color: #37738d;
+  background-image: url("background_orange.tif");
+  color: #37738d;
+  grid-column: 1/4;
+}
+.yourFutureOptions{
+
+  font-size: 15pt;
+  color: #214a5c;
+}
+.moneyMatters{
+  background-color: #8d2323;
+  background-image: url("background_green.tif");
+  color : #8d2323;
+  grid-column: 3/6;
+}
+.moneyMattersOptions{
+  font-size: 15pt;
   color: #8d2323;
+}
+.search-bar {
+
+}
+.input_field_search{
+  width: 80%;
+  font-size: 20px;
+}
+.search_button{
+  font-size: 20px;
 }
