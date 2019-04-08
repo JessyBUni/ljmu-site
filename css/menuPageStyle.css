@@ -1,6 +1,7 @@
 
 html{
 background-color: white;
+font-family: 'Varela Round', sans-serif;
 }
 header{
   font-size:  50pt;
@@ -12,6 +13,7 @@ header{
 h1{
   padding-left: 10pt;
   padding-right: 10pt;
+  padding-top: 10pt;
   font-size: 20pt;
 }
 h2 {
@@ -28,10 +30,16 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto auto ;
 background-color: black;
-  
+
 }
 .menuHeader{
   color: white;
+  vertical-align:middle;
+  height: 40pt;
+}
+.selectedMenuHeader{
+  color: white;
+  background-color: blue;
   vertical-align:middle;
   height: 40pt;
 }
@@ -44,7 +52,8 @@ background-color: black;
 .adviceOrientation{
 
   background-color: #37738d;
-  background-image: url("background_blue.tif");
+
+  background-image: url("../../resources/background_blue.tif");
   color: #f19d42;
   grid-column: 1/4;
 }
@@ -92,4 +101,7 @@ background-color: black;
 }
 .search_button{
   font-size: 20px;
+}
+.relatedlinks{
+  grid-column: 1;
 }
