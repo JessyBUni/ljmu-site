@@ -3,23 +3,20 @@ html{
 background-color: white;
 font-family: 'Varela Round', sans-serif;
 }
-header{
+h1 {
   font-size:  50pt;
   font-family: 'Permanent Marker', cursive;
   padding-left: 10pt;
   padding-right: 10pt;
 
 }
-h1{
+h2 {
   padding-left: 10pt;
   padding-right: 10pt;
   padding-top: 10pt;
   font-size: 20pt;
 }
-h2 {
-  padding-left: 10pt;
-  padding-right: 10pt;
-}
+
 .headerGrid{
   display: grid;
   grid-template-columns: 25% 75% ;
