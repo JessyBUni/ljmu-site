@@ -49,11 +49,14 @@ background-color: black;
   grid-gap: 10px;
   padding: 10px;
 }
+.content{
+  
+}
 .adviceOrientation{
 
   background-color: #37738d;
 
-  background-image: url("../../resources/background_blue.tif");
+  background-image: url("../resources/background_blue.tif");
   color: #f19d42;
   grid-column: 1/4;
 }
