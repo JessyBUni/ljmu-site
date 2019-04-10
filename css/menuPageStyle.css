@@ -50,7 +50,7 @@ background-color: black;
   padding: 10px;
 }
 .content{
-  
+
 }
 .adviceOrientation{
 
@@ -66,7 +66,7 @@ background-color: black;
 }
 .StudyEssentials{
   background-color: #8d2323;
-  background-image: url("background_pink.tif");
+  background-image: url("../resources/background_pink.tif");
   color : #42EB44;
   grid-column: 3/6;
 }
@@ -76,7 +76,7 @@ background-color: black;
 }
 .yourFuture{
   background-color: #37738d;
-  background-image: url("background_orange.tif");
+  background-image: url("../resources/background_orange.tif");
   color: #37738d;
   grid-column: 1/4;
 }
@@ -87,7 +87,7 @@ background-color: black;
 }
 .moneyMatters{
   background-color: #8d2323;
-  background-image: url("background_green.tif");
+  background-image: url("../resources/background_green.tif");
   color : #8d2323;
   grid-column: 3/6;
 }
