@@ -15,10 +15,16 @@ h2 {
   padding-right: 10pt;
   padding-top: 10pt;
   font-size: 20pt;
-  color: white;
+  color: red;
 }
-.style {
-  colour:#282828;
+h3 {
+  font-size: 15pt;
+  color: #282828;
+}
+.footer_style{
+  background-color:#282828;
+  color: #C1CED6;
+  height: 40pt;
 }
 .headerGrid{
   /*background-image: url("../resources/l_skyline.png");*/
@@ -60,6 +66,7 @@ h2 {
   grid-template-columns: auto auto auto auto ;
 background-color: #282828;
 
+
 }
 .menuHeader{
   color: white;
@@ -72,21 +79,51 @@ background-color: #282828;
   vertical-align:middle;
   height: 40pt;
 }
-.cat-grid {
+/*.cat-grid {
   display: grid;
   grid-template-columns: auto auto auto auto auto ;
   grid-gap: 10px;
   padding: 10px;
+}*/
+.cat-grid-left {
+  display: grid;
+  grid-template-columns: 55% auto auto ;
+  grid-gap: 10px;
+  padding: 10px;
+  outline: solid;
+  outline-width: medium;
+  outline-color: #C1CED6;
+  border : solid;
+  border-color: #282828;
+  border-width: medium;
+border-radius: 30px;
+background-color: #C1CED6;
+}
+.cat-grid-right {
+  display: grid;
+  grid-template-columns: auto auto 55% ;
+  grid-gap: 10px;
+  padding: 10px;
+  outline: solid;
+  outline-color: #C1CED6;
+  outline-width: medium;
+  border : solid;
+  border-color: #282828;
+  border-width: medium;
+border-radius: 30px;
+background-color: #C1CED6;
 }
 .content{
 
 }
 .adviceOrientation{
-
   background-color: #37738d;
   background-image: url("../resources/background_blue.png");
-  color: white;
-  grid-column: 1/4;
+  border: solid;
+  border-radius: 10pt;
+  border-color: #C1CED6
+  background-clip: border-box;
+  /*grid-column: 1/4;*/
 }
 .adviceOrientationOptions{
   font-size: 15pt;
@@ -95,8 +132,11 @@ background-color: #282828;
 .StudyEssentials{
   background-color: #8d2323;
   background-image: url("../resources/background_pink.png");
-  color : white;
-  grid-column: 3/6;
+  border: solid;
+  border-radius: 10pt;
+  border-color: #C1CED6
+  background-clip: border-box;
+  /*grid-column: 3/6;*/
 }
 .StudyEssentialsOptions{
   font-size: 15pt;
@@ -105,8 +145,11 @@ background-color: #282828;
 .yourFuture{
   background-color: #37738d;
   background-image: url("../resources/background_orange.png");
-  color: white;
-  grid-column: 1/4;
+  border: solid;
+  border-radius: 10pt;
+  border-color: #C1CED6
+  background-clip: border-box;
+  /*grid-column: 1/4;*/
 }
 .yourFutureOptions{
 
@@ -116,8 +159,11 @@ background-color: #282828;
 .moneyMatters{
   background-color: #8d2323;
   background-image: url("../resources/background_green.png");
-  color : white;
-  grid-column: 3/6;
+  border: solid;
+  border-radius: 10pt;
+  border-color: #C1CED6
+  background-clip: border-box;
+  /*grid-column: 3/6;*/
 }
 .moneyMattersOptions{
   font-size: 15pt;
