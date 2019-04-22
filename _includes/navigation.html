@@ -1,14 +1,29 @@
 <div class="menuHeaders">
   <div class="menuHeader">
-    <h1><a href="../advice/student_advice.html">Advice and Orientation</a></h1>
+    <h2>
+      <a href="../advice/advice.html" {% if page.url == "../advice" %}class="selectedMenuHeader"{% endif %}>
+        Advice and Orientation
+    </a>
+  </h2>
   </div>
   <div class="menuHeader">
-    <h1>Study Essentials</h1>
+    <h2>
+      <a href="../study/study.html" {% if page.url == "../study" %}class="selectedMenuHeader"{% endif %}>
+        Study Essentials
+    </a>
   </div>
   <div class="menuHeader">
-    <h1>Your Future</h1>
+    <h2>
+    <a href="../future/future.html" {% if page.url == "../future" %}class="selectedMenuHeader"{% endif %}>
+      Your Future
+  </a>
+  </h2>
   </div>
   <div class="menuHeader">
-    <h1>Money Matters</h1>
+    <h2>
+      <a href="../money/money.html" {% if page.url == "../money" %}class="selectedMenuHeader"{% endif %}>
+        Money Matters
+    </a>
+  </h2>
   </div>
 </div>

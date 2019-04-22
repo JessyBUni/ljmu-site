@@ -23,6 +23,34 @@ h2 {
   grid-gap: 10px;
   padding: 0px;
 }
+.headerGrid_advice{
+  background-image: url("../resources/background_blue.png");
+  display: grid;
+  grid-template-columns: 25% 75% ;
+  grid-gap: 10px;
+  padding: 0px;
+}
+.headerGrid_future{
+  background-image: url("../resources/background_orange.png");
+  display: grid;
+  grid-template-columns: 25% 75% ;
+  grid-gap: 10px;
+  padding: 0px;
+}
+.headerGrid_money{
+  background-image: url("../resources/background_green.png");
+  display: grid;
+  grid-template-columns: 25% 75% ;
+  grid-gap: 10px;
+  padding: 0px;
+}
+.headerGrid_study{
+  background-image: url("../resources/background_pink.png");
+  display: grid;
+  grid-template-columns: 25% 75% ;
+  grid-gap: 10px;
+  padding: 0px;
+}
 .menuHeaders{
   display: grid;
   grid-template-columns: auto auto auto auto ;
@@ -36,7 +64,7 @@ background-color: black;
 }
 .selectedMenuHeader{
   color: white;
-  background-color: blue;
+  background-color: red;
   vertical-align:middle;
   height: 40pt;
 }
@@ -52,7 +80,6 @@ background-color: black;
 .adviceOrientation{
 
   background-color: #37738d;
-
   background-image: url("../resources/background_blue.png");
   color: #f19d42;
   grid-column: 1/4;
@@ -95,6 +122,12 @@ background-color: black;
 .search-bar {
 
 }
+.logo_image{
+  image: url("../resources/LJMU_LOGO.png");
+  mix-blend-mode: multiply;
+  height: 200pt;
+}
+
 .input_field_search{
   width: 80%;
   font-size: 20px;
