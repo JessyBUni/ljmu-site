@@ -1,0 +1,19 @@
+<div
+{% if page.dir == "/" %}class="headerGrid"{% endif %}
+{% if page.dir == "/advice/" %}class="headerGrid_advice"{% endif %}
+{% if page.dir == "/study/" %}class="headerGrid_study"{% endif %}
+{% if page.dir == "/money/" %}class="headerGrid_money"{% endif %}
+{% if page.dir == "/future/" %}class="headerGrid_future"{% endif %}>
+  <img src="../resources/LJMU-Logo-2.png" alt="LJMU Logo" height="200pt" >
+  <div class="search-bar">
+    <h1 align="right">Liverpool John Moores </h1>
+    <h1 align="right">{{ page.title }}</h1>
+    <h2 align="right">All your possible needs as a student at LJMU</h2>
+    <form action="/action_page.php">
+      <input class="input_field_search" type="text" placeholder="Search..." name="search">
+      <button class="search_button" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</div>

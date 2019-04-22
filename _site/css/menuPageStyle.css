@@ -1,6 +1,6 @@
 
 html{
-background-color: white;
+background-color: #C1CED6;
 font-family: 'Varela Round', sans-serif;
 }
 h1 {
@@ -8,16 +8,20 @@ h1 {
   font-family: 'Permanent Marker', cursive;
   padding-left: 10pt;
   padding-right: 10pt;
-
+  color: #282828;
 }
 h2 {
   padding-left: 10pt;
   padding-right: 10pt;
   padding-top: 10pt;
   font-size: 20pt;
+  color: white;
 }
-
+.style {
+  colour:#282828;
+}
 .headerGrid{
+  /*background-image: url("../resources/l_skyline.png");*/
   display: grid;
   grid-template-columns: 25% 75% ;
   grid-gap: 10px;
@@ -54,7 +58,7 @@ h2 {
 .menuHeaders{
   display: grid;
   grid-template-columns: auto auto auto auto ;
-background-color: black;
+background-color: #282828;
 
 }
 .menuHeader{
@@ -63,8 +67,8 @@ background-color: black;
   height: 40pt;
 }
 .selectedMenuHeader{
-  color: white;
-  background-color: red;
+  color: red;
+  background-color: #1A237E;
   vertical-align:middle;
   height: 40pt;
 }
@@ -81,7 +85,7 @@ background-color: black;
 
   background-color: #37738d;
   background-image: url("../resources/background_blue.png");
-  color: #f19d42;
+  color: white;
   grid-column: 1/4;
 }
 .adviceOrientationOptions{
@@ -91,7 +95,7 @@ background-color: black;
 .StudyEssentials{
   background-color: #8d2323;
   background-image: url("../resources/background_pink.png");
-  color : #42EB44;
+  color : white;
   grid-column: 3/6;
 }
 .StudyEssentialsOptions{
@@ -101,7 +105,7 @@ background-color: black;
 .yourFuture{
   background-color: #37738d;
   background-image: url("../resources/background_orange.png");
-  color: #37738d;
+  color: white;
   grid-column: 1/4;
 }
 .yourFutureOptions{
@@ -112,7 +116,7 @@ background-color: black;
 .moneyMatters{
   background-color: #8d2323;
   background-image: url("../resources/background_green.png");
-  color : #8d2323;
+  color : white;
   grid-column: 3/6;
 }
 .moneyMattersOptions{
