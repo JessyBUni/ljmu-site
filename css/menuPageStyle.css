@@ -4,7 +4,7 @@ background-color: #C1CED6;
 font-family: 'Varela Round', sans-serif;
 }
 h1 {
-  font-size:  50pt;
+  font-size:  40pt;
   font-family: 'Permanent Marker', cursive;
   padding-left: 10pt;
   padding-right: 10pt;
@@ -13,21 +13,30 @@ h1 {
 h2 {
   padding-left: 10pt;
   padding-right: 10pt;
-  padding-top: 10pt;
   font-size: 20pt;
-  color: red;
+
 }
 h3 {
   font-size: 15pt;
   color: #282828;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  line-height: 1.4em;
+  padding-left: 10px;
+}
+p{
+  line-height: 1.4em;
+}
 .footer_style{
   background-color:#282828;
   color: #C1CED6;
   height: 40pt;
+
 }
 .headerGrid{
-  /*background-image: url("../resources/l_skyline.png");*/
   display: grid;
   grid-template-columns: 25% 75% ;
   grid-gap: 10px;
@@ -62,37 +71,37 @@ h3 {
   padding: 0px;
 }
 .menuHeaders{
-  display: grid;
+display:grid;
   grid-template-columns: auto auto auto auto ;
 background-color: #282828;
-
+height: auto;
+white-space: nowrap;
 
 }
 .menuHeader{
-  color: white;
+  color: red;
+  background-color: #282828;
   vertical-align:middle;
   height: 40pt;
 }
 .selectedMenuHeader{
-  color: red;
+  color: white;
   background-color: #1A237E;
   vertical-align:middle;
   height: 40pt;
 }
-/*.cat-grid {
+.cat-grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto ;
+  grid-template-columns:  25% auto 25%;
   grid-gap: 10px;
   padding: 10px;
-}*/
+}
 .cat-grid-left {
   display: grid;
   grid-template-columns: 55% auto auto ;
   grid-gap: 10px;
   padding: 10px;
-  outline: solid;
-  outline-width: medium;
-  outline-color: #C1CED6;
+margin: 20px;
   border : solid;
   border-color: #282828;
   border-width: medium;
@@ -104,9 +113,7 @@ background-color: #C1CED6;
   grid-template-columns: auto auto 55% ;
   grid-gap: 10px;
   padding: 10px;
-  outline: solid;
-  outline-color: #C1CED6;
-  outline-width: medium;
+margin: 20px;
   border : solid;
   border-color: #282828;
   border-width: medium;
@@ -121,61 +128,55 @@ background-color: #C1CED6;
   background-image: url("../resources/background_blue.png");
   border: solid;
   border-radius: 10pt;
-  border-color: #C1CED6
+  border-color: #282828;
   background-clip: border-box;
   /*grid-column: 1/4;*/
 }
-.adviceOrientationOptions{
-  font-size: 15pt;
-  color: #8A3100;
+.options{
+  /*font-size: 15pt;*/
 }
 .StudyEssentials{
   background-color: #8d2323;
   background-image: url("../resources/background_pink.png");
   border: solid;
   border-radius: 10pt;
-  border-color: #C1CED6
+  border-color: #282828;
   background-clip: border-box;
   /*grid-column: 3/6;*/
-}
-.StudyEssentialsOptions{
-  font-size: 15pt;
-  color: #315200;
 }
 .yourFuture{
   background-color: #37738d;
   background-image: url("../resources/background_orange.png");
   border: solid;
   border-radius: 10pt;
-  border-color: #C1CED6
+  border-color: #282828;
   background-clip: border-box;
   /*grid-column: 1/4;*/
-}
-.yourFutureOptions{
-
-  font-size: 15pt;
-  color: #214a5c;
 }
 .moneyMatters{
   background-color: #8d2323;
   background-image: url("../resources/background_green.png");
   border: solid;
   border-radius: 10pt;
-  border-color: #C1CED6
+  border-color: #282828;
   background-clip: border-box;
   /*grid-column: 3/6;*/
 }
-.moneyMattersOptions{
-  font-size: 15pt;
-  color: #8d2323;
+.side_panel {
+  border:solid;
+  border-radius: 10pt;
+  border-color: #282828;
 }
 .search-bar {
-
+/*  background-image: url("../resources/l_skyline.png");*/
+padding: 10pt;
 }
 .logo_image{
-  image: url("../resources/LJMU_LOGO.png");
+  image: url("../resources/LJMU-Logo-2.png");
   mix-blend-mode: multiply;
-  height: 200pt;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 .input_field_search{
@@ -187,4 +188,8 @@ background-color: #C1CED6;
 }
 .relatedlinks{
   grid-column: 1;
+  border:solid;
+  border-color: #282828;
+  border-width: medium;
+  border-radius: 10px;
 }
