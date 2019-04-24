@@ -20,3 +20,11 @@
     </a>
   </div>
 </div>
+<script type="text/javascript">
+  const nav = document.querySelector('#index');
+  const topOfNav =nav.offsetTop;
+  function fixNav(){
+console.log(  topOfNav);
+  }
+  window.addEventListener('scroll', fixNav);
+</script>

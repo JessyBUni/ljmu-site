@@ -11,10 +11,12 @@
   <div
 
 
-class="headerGrid_study"
+class="headerGrid-study"
 
 >
-  <img src="../resources/LJMU-Logo-2.png" alt="LJMU Logo" height="100%" >
+<div class="logo_image">
+
+</div>
   <div class="search-bar">
     <h1 align="right">Liverpool John Moores </h1>
     <h1 align="right">Help with Study Skills</h1>
@@ -50,6 +52,14 @@ class="headerGrid_study"
     </a>
   </div>
 </div>
+<script type="text/javascript">
+  const nav = document.querySelector('#index');
+  const topOfNav =nav.offsetTop;
+  function fixNav(){
+console.log(  topOfNav);
+  }
+  window.addEventListener('scroll', fixNav);
+</script>
 
   </header>
   <div class="cat-grid">

@@ -36,60 +36,46 @@ p{
   height: 40pt;
 
 }
-.headerGrid{
+
+.headerGrid, .headerGrid-advice, .headerGrid-future, .headerGrid-study, .headerGrid-money{
   display: grid;
   grid-template-columns: 25% 75% ;
   grid-gap: 10px;
   padding: 0px;
 }
-.headerGrid_advice{
+.headerGrid-advice{
   background-image: url("../resources/background_blue.png");
-  display: grid;
-  grid-template-columns: 25% 75% ;
-  grid-gap: 10px;
-  padding: 0px;
 }
-.headerGrid_future{
+.headerGrid-future{
   background-image: url("../resources/background_orange.png");
-  display: grid;
-  grid-template-columns: 25% 75% ;
-  grid-gap: 10px;
-  padding: 0px;
 }
-.headerGrid_money{
+.headerGrid-money{
   background-image: url("../resources/background_green.png");
-  display: grid;
-  grid-template-columns: 25% 75% ;
-  grid-gap: 10px;
-  padding: 0px;
 }
-.headerGrid_study{
+.headerGrid-study{
   background-image: url("../resources/background_pink.png");
-  display: grid;
-  grid-template-columns: 25% 75% ;
-  grid-gap: 10px;
-  padding: 0px;
+
 }
 .menuHeaders{
-display:grid;
+  display:grid;
   grid-template-columns: auto auto auto auto ;
-background-color: #282828;
-height: auto;
-white-space: nowrap;
+  background-color: #282828;
+  height: auto;
+  /*white-space: nowrap;*/
 
 }
 .menuHeader{
   color: red;
   background-color: #282828;
   vertical-align:middle;
-  height: 40pt;
+  display: inline-block;
 }
-a.selectedMenuHeader{
-  display: block;
+.selectedMenuHeader{
+  display: inline-block;
   color: white;
   background-color: #C1CED6;
   vertical-align:middle;
-  height: 40pt;
+  height:inherit;
 }
 .cat-grid {
   display: grid;
@@ -97,100 +83,66 @@ a.selectedMenuHeader{
   grid-gap: 10px;
   padding: 10px;
 }
-.cat-grid-left {
+.cat-grid-left,.cat-grid-right{
   display: grid;
-  grid-template-columns: 55% auto auto ;
   grid-gap: 10px;
   padding: 10px;
-margin: 20px;
+  margin: 20px;
   border : solid;
   border-color: #282828;
   border-width: medium;
-border-radius: 30px;
-background-color: #C1CED6;
+  border-radius: 30px;
+  background-color: #C1CED6;
+}
+.cat-grid-left {
+  grid-template-columns: 55% auto auto ;
 }
 .cat-grid-right {
-  display: grid;
   grid-template-columns: auto auto 55% ;
-  grid-gap: 10px;
-  padding: 10px;
-margin: 20px;
-  border : solid;
-  border-color: #282828;
-  border-width: medium;
-border-radius: 30px;
-background-color: #C1CED6;
 }
 .content{
 
 }
-.adviceOrientation{
-  background-color: #37738d;
-  background-image: url("../resources/background_blue.png");
+.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.relatedlinks,.sidePanel{
   border: solid;
   border-radius: 10pt;
   border-color: #282828;
   background-clip: border-box;
-  /*grid-column: 1/4;*/
 }
-.options{
-  /*font-size: 15pt;*/
+.adviceOrientation{
+  background-color: #37738d;
+  background-image: url("../resources/background_blue.png");
 }
 .StudyEssentials{
   background-color: #8d2323;
   background-image: url("../resources/background_pink.png");
-  border: solid;
-  border-radius: 10pt;
-  border-color: #282828;
-  background-clip: border-box;
-  /*grid-column: 3/6;*/
 }
 .yourFuture{
   background-color: #37738d;
   background-image: url("../resources/background_orange.png");
-  border: solid;
-  border-radius: 10pt;
-  border-color: #282828;
-  background-clip: border-box;
-  /*grid-column: 1/4;*/
 }
 .moneyMatters{
   background-color: #8d2323;
   background-image: url("../resources/background_green.png");
-  border: solid;
-  border-radius: 10pt;
-  border-color: #282828;
-  background-clip: border-box;
-  /*grid-column: 3/6;*/
 }
-.side_panel {
-  border:solid;
-  border-radius: 10pt;
-  border-color: #282828;
+.relatedlinks{
+  grid-column: 1;
 }
 .search-bar {
 /*  background-image: url("../resources/l_skyline.png");*/
+grid-column: 2;
 padding: 10pt;
 }
 .logo_image{
-  image: url("../resources/LJMU-Logo-2.png");
-  mix-blend-mode: multiply;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+content: url("../resources/LJMU-Logo-2.png");
+max-height: 300px;
+height: 100%;
+grid-column: 1;
 }
-
 .input_field_search{
   width: 80%;
   font-size: 20px;
 }
 .search_button{
   font-size: 20px;
-}
-.relatedlinks{
-  grid-column: 1;
-  border:solid;
-  border-color: #282828;
-  border-width: medium;
-  border-radius: 10px;
 }
