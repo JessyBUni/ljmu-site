@@ -30,6 +30,19 @@ a{
 p{
   line-height: 1.4em;
 }
+nav{
+  top :0;
+  width :100%;
+  transition: all 0.5s;
+  position: relative;
+}
+.fixed-nav {
+
+}
+.fixed-nav .menuHeaders {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
 .footer_style{
   background-color:#282828;
   color: #C1CED6;
@@ -60,22 +73,24 @@ p{
   display:grid;
   grid-template-columns: auto auto auto auto ;
   background-color: #282828;
-  height: auto;
+  /*height: auto;*/
   /*white-space: nowrap;*/
 
+}
+.menuHeader,.selectedMenuHeader{
+  vertical-align:middle;
+  display: block;
+  padding : 10px;
+  /*border: solid;
+  border-width: 10pt;*/
 }
 .menuHeader{
   color: red;
   background-color: #282828;
-  vertical-align:middle;
-  display: inline-block;
 }
 .selectedMenuHeader{
-  display: inline-block;
   color: white;
   background-color: #C1CED6;
-  vertical-align:middle;
-  height:inherit;
 }
 .cat-grid {
   display: grid;

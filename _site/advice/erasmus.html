@@ -28,35 +28,36 @@ class="headerGrid-advice"
       </button>
     </form>
   </div>
-</div>
+</div> 
 
-    <div class="menuHeaders">
-  <div class="menuHeader">
+    <nav class="menuHeaders" id ="main-nav">
       <a href="../advice/advice.html" class="selectedMenuHeader">
         <h2>Advice and Orientation</h2>
     </a>
-  </div>
-  <div class="menuHeader">
-      <a href="../study/study.html" >
+      <a href="../study/study.html"  class = "menuHeader">
         <h2>Study Essentials</h2>
     </a>
-  </div>
-  <div class="menuHeader">
-    <a href="../future/future.html" >
+    <a href="../future/future.html"  class = "menuHeader" >
       <h2>Your Future</h2>
   </a>
-  </div>
-  <div class="menuHeader">
-      <a href="../money/money.html" >
+      <a href="../money/money.html"  class = "menuHeader">
         <h2>Money Matters</h2>
     </a>
-  </div>
-</div>
+</nav>
 <script type="text/javascript">
-  const nav = document.querySelector('#index');
+  const nav = document.querySelector('#main-nav');
   const topOfNav =nav.offsetTop;
-  function fixNav(){
-console.log(  topOfNav);
+
+function fixNav(){
+  if (window.scrollY>=topOfNav){
+    document.body.style.paddingTop = nav.offsetHeight+ 'px';
+    document.body.classList.add ('fixed-nav');
+  }
+  else{
+    document.body.style.paddingTop =0;
+    document.body.classList.remove ('fixed-nav');
+  }
+//console.log(  topOfNav);
   }
   window.addEventListener('scroll', fixNav);
 </script>
