@@ -36,12 +36,52 @@ nav{
   transition: all 0.5s;
   position: relative;
 }
-.fixed-nav {
-
+nav {
+  background: #282828;
+  top: 0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
 }
-.fixed-nav .menuHeaders {
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoHeader {
+  max-width: 0;
+  overflow: hidden;
+  background: #FF0000;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 20px;
+  color: #282828;
+  background-image: url("../resources/LJMU-Logo-2.png") top center no-repeat;
+  background-size: cover;
+  height:auto;
+}
+
+.fixed-nav li.logoHeader {
+  max-width: 100px;
+}
+body.fixed-nav nav {
   position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
 }
 .footer_style{
   background-color:#282828;
@@ -71,12 +111,13 @@ nav{
 }
 .menuHeaders{
   display:grid;
-  grid-template-columns: auto auto auto auto ;
+  grid-template-columns: auto auto auto auto auto ;
   background-color: #282828;
   /*height: auto;*/
   /*white-space: nowrap;*/
 
 }
+
 .menuHeader,.selectedMenuHeader{
   vertical-align:middle;
   display: block;
@@ -85,7 +126,7 @@ nav{
   border-width: 10pt;*/
 }
 .menuHeader{
-  color: red;
+  color: #FF0000;
   background-color: #282828;
 }
 .selectedMenuHeader{
