@@ -70,7 +70,7 @@ class="headerGrid"
 
   </header>
 
-    <div class="cat-grid-left">
+    <div class="cat-grid-left1">
     <div class="adviceOrientation">
       <h1 align="center" > Advice </h1>
       <h1 align="center">and</h1>
@@ -104,7 +104,7 @@ class="headerGrid"
       </ul>
     </div>
     </div>
-    <div class="cat-grid-right">
+    <div class="cat-grid-right1">
     <div class="options">
       <ul>
       <li><a href="study/off_campus_app.html">Off Campus App</a></li>
@@ -116,7 +116,7 @@ class="headerGrid"
       <li><a href="study/change_password.html">Activate/Change Password</a></li>
       </ul>
     </div>
-    <div class="options">
+    <div class="options" >
       <ul>
       <li><a href="study/assessments.html">Assessments</a></li>
       <li><a href="study/timetables.html">Timetables</a></li>
@@ -132,7 +132,7 @@ class="headerGrid"
       <h1 align="center">Essentials</h1>
     </div>
   </div>
-  <div class="cat-grid-left">
+  <div class="cat-grid-left2">
     <div class="yourFuture">
       <h1 align="center">Your </h1>
       <h1 align="center">Future</h1>
@@ -152,7 +152,7 @@ class="headerGrid"
     </ul>
     </div>
   </div>
-  <div class="cat-grid-right">
+  <div class="cat-grid-right2">
     <div class="options">
       <ul>
       <li><a href="money/fees_funding.html">Fees and Funding</a></li>
@@ -173,11 +173,10 @@ class="headerGrid"
     </div>
   </div>
 
-<!-- <script>
+  <script>
     const triggers = document.querySelectorAll('a');
     const highlight = document.createElement('span');
     highlight.classList.add('highlight');
-
     document.body.appendChild(highlight);
     function highlightLink() {
       const linkCoords = this.getBoundingClientRect();
@@ -188,17 +187,31 @@ class="headerGrid"
         top: linkCoords.top + window.scrollY,
         left: linkCoords.left + window.scrollX
       };
-      highlight.style.width = `${coords.width}px`;
-      highlight.style.height = `${coords.height}px`;
+      //this.style.color=#FFFFFF;
+      highlight.style.width = `${coords.width+10}px`;
+      highlight.style.height = `${coords.height+2}px`;
       highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
     }
-    triggers.forEach(a => a.addEventListener('mouseenter', highlightLink);
-  </script> -->
+    triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+  </script>
 
 </body>
 <footer>
 <div class="footer_style">
-
+    <ul>
+      <li >
+        <img src="../resources/youtube-logo.png" alt="youtube" height="50px" width="50px">
+      </li>
+      <li>
+      <img src="../resources/facebook-logo.png" alt="facebook" height="50px" width="50px">
+      </li>
+      <li >
+        <img src="../resources/twitter-logo.png" alt="twitter" height="50px" width="50px">
+      </li>
+      <li ></li>
+      <li >
+      </li>
+    </ul>
 </div>
 </footer>
 

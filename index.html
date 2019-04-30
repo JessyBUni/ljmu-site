@@ -3,7 +3,7 @@ layout: default
 title: Student Zone
 ---
 
-  <div class="cat-grid-left">
+  <div class="cat-grid-left1">
     <div class="adviceOrientation">
       <h1 align="center" > Advice </h1>
       <h1 align="center">and</h1>
@@ -37,7 +37,7 @@ title: Student Zone
       </ul>
     </div>
     </div>
-    <div class="cat-grid-right">
+    <div class="cat-grid-right1">
     <div class="options">
       <ul>
       <li><a href="study/off_campus_app.html">Off Campus App</a></li>
@@ -49,7 +49,7 @@ title: Student Zone
       <li><a href="study/change_password.html">Activate/Change Password</a></li>
       </ul>
     </div>
-    <div class="options">
+    <div class="options" >
       <ul>
       <li><a href="study/assessments.html">Assessments</a></li>
       <li><a href="study/timetables.html">Timetables</a></li>
@@ -65,7 +65,7 @@ title: Student Zone
       <h1 align="center">Essentials</h1>
     </div>
   </div>
-  <div class="cat-grid-left">
+  <div class="cat-grid-left2">
     <div class="yourFuture">
       <h1 align="center">Your </h1>
       <h1 align="center">Future</h1>
@@ -85,7 +85,7 @@ title: Student Zone
     </ul>
     </div>
   </div>
-  <div class="cat-grid-right">
+  <div class="cat-grid-right2">
     <div class="options">
       <ul>
       <li><a href="money/fees_funding.html">Fees and Funding</a></li>
@@ -106,11 +106,10 @@ title: Student Zone
     </div>
   </div>
 
-<!-- <script>
+  <script>
     const triggers = document.querySelectorAll('a');
     const highlight = document.createElement('span');
     highlight.classList.add('highlight');
-
     document.body.appendChild(highlight);
     function highlightLink() {
       const linkCoords = this.getBoundingClientRect();
@@ -121,9 +120,10 @@ title: Student Zone
         top: linkCoords.top + window.scrollY,
         left: linkCoords.left + window.scrollX
       };
-      highlight.style.width = `${coords.width}px`;
-      highlight.style.height = `${coords.height}px`;
+      //this.style.color=#FFFFFF;
+      highlight.style.width = `${coords.width+10}px`;
+      highlight.style.height = `${coords.height+2}px`;
       highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
     }
-    triggers.forEach(a => a.addEventListener('mouseenter', highlightLink);
-  </script> -->
+    triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+  </script>
