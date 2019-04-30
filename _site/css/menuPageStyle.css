@@ -42,12 +42,7 @@ a{
 p{
   line-height: 1.4em;
 }
-nav{
-  top :0;
-  width :100%;
-  transition: all 0.5s;
-  position: relative;
-}
+
 nav {
   background: #282828;
   top: 0;
@@ -91,9 +86,17 @@ nav li {
 .fixed-nav li.logoHeader {
   max-width: 100px;
 }
+
 body.fixed-nav nav {
   position: fixed;
   box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+}
+
+.sidePanel{
+  top :0;
+  width :100%;
+  transition: all 0.5s;
+  position: relative;
 }
 .footer_style{
   background-color:#282828;
@@ -183,7 +186,7 @@ background-size:cover;
 .content{
 
 }
-.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.relatedlinks,.sidePanel{
+.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.sidePanel{
   vertical-align:middle;
   display: block;
   border: solid;
@@ -217,6 +220,9 @@ background-size:cover;
 }
 .relatedlinks{
   grid-column: 1;
+  vertical-align:middle;
+  display: block;
+  color: #282828;
 }
 .search-bar {
 /*  background-image: url("../resources/l_skyline.png");*/
