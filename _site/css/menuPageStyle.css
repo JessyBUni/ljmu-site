@@ -124,6 +124,7 @@ body.fixed-nav nav {
 }
 .options{
   line-height: 1.5em;
+  z-index: 1;
 }
 .headerGrid, .headerGrid-advice, .headerGrid-future, .headerGrid-study, .headerGrid-money{
   display: grid;
@@ -156,18 +157,11 @@ background-size:cover;
   background-image: var(--study_bg_image);
   /*background-image: url("../resources/background_pink.png");*/
 }
-.menuHeaders{
-  display:grid;
-  grid-template-columns: auto auto auto auto auto ;
-  background-color: #282828;
-  /*height: auto;*/
-  /*white-space: nowrap;*/
-
-}
 .menuHeader,.selectedMenuHeader{
   vertical-align:middle;
-  display: block;
+  display: flex;
   padding : 10px;
+  justify-content: center;
   /*border: solid;
   border-width: 10pt;*/
 }
@@ -217,8 +211,11 @@ padding: 10px;
 }
 
 .adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.sidePanel{
-  vertical-align:middle;
-  display: block;
+
+  justify-content: center;
+  display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
   border: solid;
   border-radius: 10pt;
   /*border-color: #282828;*/
@@ -263,11 +260,14 @@ height: 100%;
 grid-column: 1;
 }
 .input_field_search{
+
+  float: right;
   width: 80%;
   font-size: 20px;
 }
 .search_button{
   font-size: 20px;
+float: right;
 }
 
 .highlight{
