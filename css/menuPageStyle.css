@@ -122,7 +122,9 @@ body.fixed-nav nav {
   height: 100px;
 
 }
-
+.options{
+  line-height: 1.5em;
+}
 .headerGrid, .headerGrid-advice, .headerGrid-future, .headerGrid-study, .headerGrid-money{
   display: grid;
   grid-template-columns: 25% 75% ;
@@ -263,9 +265,13 @@ grid-column: 1;
 .input_field_search{
   width: 80%;
   font-size: 20px;
+  display: flex;
+   justify-content: center;
 }
 .search_button{
   font-size: 20px;
+  display: flex;
+   justify-content: center;
 }
 
 .highlight{

@@ -3,3 +3,4 @@ defaults:
       path: "resources/"
     values:
       image: true
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
