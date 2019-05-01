@@ -213,12 +213,13 @@ background-size:cover;
 .content{
 padding: 10px;
 }
+
 .adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.sidePanel{
   vertical-align:middle;
   display: block;
   border: solid;
   border-radius: 10pt;
-  border-color: #282828;
+  /*border-color: #282828;*/
   background-clip: border-box;
   color: #282828;
 }
@@ -272,7 +273,19 @@ grid-column: 1;
   border-bottom: 2px solid #FF0000;
   position: absolute;
   top: 0;
-
+  /*background: #282828;*/
+  colour: #FF0000;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.highlight-i{
+  transition: all 0.2s;
+  border-bottom: 2px solid #FF0000;
+  position: absolute;
+  top: 0;
   /*background: #282828;*/
   colour: #FF0000;
   left: 0;
