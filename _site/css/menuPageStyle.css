@@ -253,6 +253,7 @@ grid-column: 2;
 padding: 10pt;
 color: #282828;
 }
+
 .logo_image{
 content: url("../resources/LJMU-Logo-2.png");
 max-height: 300px;
