@@ -32,45 +32,29 @@ class="headerGrid"
   </div>
 </div>
 
-      
-<nav  id ="main-nav">
-  <ul>
-    <li class="logoHeader">
-      <a href=var(--root_web_page)+"index.html" >
-      <h2>LJ</h2><h2>MU</h2></a></li>
-    <li  class = "menuHeader">
-    <a href="../ljmu-site/advice/advice.html">
-      <h2>Advice and Orientation</h2>
-    </a></li>
-    <li  class = "menuHeader">
-    <a href="../study/study.html">
-      <h2>Study Essentials</h2>
-    </a></li>
-    <li  class = "menuHeader" >
-    <a href="../future/future.html">
-      <h2>Your Future</h2>
-    </a></li>
-    <li  class = "menuHeader">
-      <a href="../money/money.html">
-      <h2>Money Matters</h2>
-    </a></li>
-  </ul>
-</nav>
-<script type="text/javascript">
-  const nav = document.querySelector('#main-nav');
-  let topOfNav = nav.offsetTop;
-  function fixNav() {
-      if (window.scrollY >= topOfNav) {
-        document.body.style.paddingTop = nav.offsetHeight + 'px';
-        document.body.classList.add('fixed-nav');
-      } else {
-        document.body.classList.remove('fixed-nav');
-        document.body.style.paddingTop = 0;
-      }
-    }
-    window.addEventListener('scroll', fixNav);
-</script>
-
+    <nav  id ="main-nav">
+      <ul>
+        <li class="logoHeader">
+          <a href="../index.html" >
+          <h2>LJ</h2><h2>MU</h2></a></li>
+        <li  class = "menuHeader">
+        <a href="/advice/advice.html">
+          <h2>Advice and Orientation</h2>
+        </a></li>
+        <li  class = "menuHeader">
+        <a href="/study/study.html">
+          <h2>Study Essentials</h2>
+        </a></li>
+        <li  class = "menuHeader" >
+        <a href="/future/future.html">
+          <h2>Your Future</h2>
+        </a></li>
+        <li  class = "menuHeader">
+          <a href="/money/money.html">
+          <h2>Money Matters</h2>
+        </a></li>
+      </ul>
+    </nav>
   </header>
 
     <div class="cat-grid-left1">
@@ -226,3 +210,18 @@ class="headerGrid"
 </div>
 </footer>
 
+
+<script type="text/javascript">
+  const nav = document.querySelector('#main-nav');
+  let topOfNav = nav.offsetTop;
+  function fixNav() {
+      if (window.scrollY >= topOfNav) {
+        document.body.style.paddingTop = nav.offsetHeight + 'px';
+        document.body.classList.add('fixed-nav');
+      } else {
+        document.body.classList.remove('fixed-nav');
+        document.body.style.paddingTop = 0;
+      }
+    }
+    window.addEventListener('scroll', fixNav);
+</script>
