@@ -1,4 +1,5 @@
 :root {
+  --root_web_page : "https://jessybuni.github.io/ljmu-site/";
   --advice_bg_colour: #112440;
     --advice_bg1_colour : #ecdcd3;
   --advice_bg_image :url("../resources/bg1.png");
