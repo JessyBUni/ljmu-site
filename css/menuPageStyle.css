@@ -115,6 +115,11 @@ body.fixed-nav nav {
   width :100%;
   transition: all 0.5s;
   position: relative;
+  border: solid;
+  border-radius: 10pt;
+  /*border-color: #282828;*/
+  background-clip: border-box;
+  color: #282828;
   /*z-index: 1;*/
 }
 .footer_style{
@@ -211,7 +216,7 @@ background-size:cover;
 padding: 10px;
 }
 
-.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.sidePanel{
+.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters{
 
   justify-content: center;
   display:flex;
