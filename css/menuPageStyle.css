@@ -141,8 +141,17 @@ top: 80px;
 
 }
 .options{
+  display: inline-block;
   line-height: 1.5em;
   z-index: 1;
+
+}
+.options ul{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 5px;
+  float: left;
+
 }
 .headerGrid, .headerGrid-advice, .headerGrid-future, .headerGrid-study, .headerGrid-money{
   display: grid;
@@ -154,7 +163,7 @@ background-size:cover;
 .headerGrid {
   background-color: var(--index_bg_colour) ;
   background-image: var(--index_bg_image);
-
+ width: 100%
 }
 .headerGrid-advice{
   background-color: var(--advice_bg_colour) ;
@@ -198,6 +207,7 @@ background-size:cover;
   padding: 10px;
 }
 .cat-grid-left1, .cat-grid-left2, .cat-grid-right1, .cat-grid-right2{
+
   display: grid;
   grid-gap: 10px;
   padding: 10px;
@@ -209,19 +219,19 @@ background-size:cover;
   background-color: #C1CED6;
 }
 .cat-grid-left1{
-    grid-template-columns: 55% auto auto  ;
+    grid-template-columns: 55%  auto  ;
     background-color: var(--advice_bg1_colour);
   }
 .cat-grid-left2 {
-  grid-template-columns: 55% auto auto ;
+  grid-template-columns: 55% auto ;
   background-color:  var(--study_bg1_colour);
 }
 .cat-grid-right1{
-    grid-template-columns: auto auto 55% ;
+    grid-template-columns: auto 55% ;
     background-color:  var(--future_bg1_colour);
   }
   .cat-grid-right2 {
-  grid-template-columns: auto auto 55% ;
+  grid-template-columns: auto 55% ;
   background-color:  var(--money_bg1_colour);
 }
 .content{
@@ -229,14 +239,11 @@ padding: 10px;
 }
 
 .adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters{
-
-  justify-content: center;
-  display:flex;
-    align-items: center; /* Vertical center alignment */
-    justify-content: center; /* Horizontal center alignment */
+  display:inline-flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
   border: solid;
   border-radius: 10pt;
-  /*border-color: #282828;*/
   background-clip: border-box;
   color: #282828;
 }
@@ -286,7 +293,9 @@ grid-column: 2;
 padding: 10pt;
 color: #282828;
 }
-
+.search-bar h2{
+  margin-bottom: 10px;
+}
 .logo_image{
 content: url("../resources/LJMU-Logo-2.png");
 max-height: 300px;
@@ -294,7 +303,7 @@ height: 100%;
 grid-column: 1;
 }
 .input_field_search{
-
+margin-right: 20px;
   float: right;
   width: 80%;
   font-size: 20px;
