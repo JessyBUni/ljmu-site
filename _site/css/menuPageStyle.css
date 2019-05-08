@@ -111,17 +111,28 @@ body.fixed-nav nav {
 }
 
 .sidePanel{
-  top :0;
-  width :100%;
+position: fixed;
+z-index: 1;
+
+left: 10px;
+overflow-x: hidden;
+
+position: -webkit-sticky;
+position: sticky;
+top: 100px;
+
   transition: all 0.5s;
+  /*
+  margin-top: 300px;
   position: relative;
+  width :25%;
+  */
   border: solid;
   border-radius: 10pt;
   /*border-color: #282828;*/
   background-clip: border-box;
   color: #282828;
   display: inline-block;
-  /*z-index: 1;*/
 }
 .sidePanel h1{
   padding-bottom: 10px;
