@@ -119,7 +119,7 @@ overflow-x: hidden;
 
 position: -webkit-sticky;
 position: sticky;
-top: 100px;
+top: 85px;
 
   transition: all 0.5s;
   /*
@@ -267,6 +267,21 @@ padding: 10px;
   vertical-align:middle;
   display: block;
   color: #282828;
+}
+.newspanel{
+  grid-column: 3;
+  vertical-align:middle;
+  display: block;
+  color: #282828;
+}
+.newspanel li{
+  line-height: 2em;
+  margin: 5px;
+  padding-left: 5px;
+  border: solid;
+  border-width: thin;
+  border-color: #282828;
+  border-radius: 10px;
 }
 .search-bar {
 /*  background-image: url("../resources/l_skyline.png");*/
