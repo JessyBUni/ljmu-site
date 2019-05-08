@@ -2,18 +2,18 @@
   --root_web_page : "https://jessybuni.github.io/ljmu-site/";
   --advice_bg_colour: #112440;
     --advice_bg1_colour : #ecdcd3;
-  --advice_bg_image :url("../resources/bg1.png");
+  --advice_bg_image :url("https://jessybuni.github.io/ljmu-site//resources/bg1.png");
   --study_bg_colour: #3574CC;
     --study_bg1_colour :#e9d6ee;
-  --study_bg_image :url("../resources/bg2.png");
+  --study_bg_image :url("https://jessybuni.github.io/ljmu-site//resources/bg2.png");
   --future_bg_colour: #214880;
     --future_bg1_colour : #d5d1f0;
-  --future_bg_image :url("../resources/bg3.png");
+  --future_bg_image :url("https://jessybuni.github.io/ljmu-site//resources/bg3.png");
   --money_bg_colour: #3C82E6;
     --money_bg1_colour : #d1e7d5;
-  --money_bg_image :url("../resources/bg4.png");
+  --money_bg_image :url("https://jessybuni.github.io/ljmu-site//resources/bg4.png");
   --index_bg_colour:#112440;
-  --index_bg_image:url("../resources/bgm.png");
+  --index_bg_image:url("https://jessybuni.github.io/ljmu-site//resources/bgm.png");
 }
 html{
 background-color: #C1CED6;
@@ -40,7 +40,7 @@ a{
   text-decoration: none;
   color: inherit;
   background-color: inherit;
-  line-height: 1.4em;
+  line-height: 1.5em;
   padding-left: 10px;
 }
 p{
@@ -115,7 +115,16 @@ body.fixed-nav nav {
   width :100%;
   transition: all 0.5s;
   position: relative;
+  border: solid;
+  border-radius: 10pt;
+  /*border-color: #282828;*/
+  background-clip: border-box;
+  color: #282828;
+  display: inline-block;
   /*z-index: 1;*/
+}
+.sidePanel h1{
+  padding-bottom: 10px;
 }
 .footer_style{
   background-color:#282828;
@@ -211,7 +220,7 @@ background-size:cover;
 padding: 10px;
 }
 
-.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters,.sidePanel{
+.adviceOrientation, .StudyEssentials,.yourFuture,.moneyMatters{
 
   justify-content: center;
   display:flex;
