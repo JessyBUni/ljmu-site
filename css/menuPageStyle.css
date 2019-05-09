@@ -36,6 +36,10 @@ h3 {
   font-size: 15pt;
   color: #282828;
 }
+h4{
+  font-size: 2vw;
+color: #FF0000;
+}
 a{
   text-decoration: none;
   color: inherit;
@@ -77,6 +81,9 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+li{
+  line-height: 2vw;
 }
 footer li {
   flex: 1;
