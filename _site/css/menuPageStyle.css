@@ -39,6 +39,7 @@ h3 {
 a{
   text-decoration: none;
   color: inherit;
+
 }
 p{
   line-height: 1.4em;
@@ -115,24 +116,23 @@ overflow-x: hidden;
 position: -webkit-sticky;
 position: sticky;
 top: calc(0% + 80px);
-
   transition: all 0.5s;
-  /*
-  top: 80px;
-  margin-top: 300px;
-  position: relative;
-  width :25%;
-  */
   border: solid;
   border-radius: 10pt;
   /*border-color: #282828;*/
   background-clip: border-box;
   color: #282828;
   display: inline-block;
+  
 }
 .sidePanel h1{
   padding-bottom: 10px;
   font-size: 3.5vw;
+}
+.sidePanel ul li a{
+  padding-left:  10px;
+  font-size: 1.4vw;
+  line-height: 2.5vw;
 }
 .footer_style{
   background-color:#282828;
@@ -155,6 +155,7 @@ grid-gap: 5px;
 }
 .options ul li a {
   padding: 3px;
+
 }
 .options ul a:hover {
   /*background-color: #282828;*/
