@@ -129,6 +129,7 @@ top: calc(0% + 80px);
   /*background-color: #282828;*/
   color:#FF0000;
   padding: 3px;
+  margin-left:10px; 
   border: solid;
   border-radius: 8px;
   background-clip: border-box;
