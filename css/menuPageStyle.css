@@ -136,7 +136,7 @@ top: calc(0% + 80px);
   /*background-color: #282828;*/
   color:#FF0000;
   padding: 3px;
-  margin-left:10px;
+  margin-left:6px;
   border: solid;
   border-radius: 8px;
   background-clip: border-box;
@@ -173,6 +173,7 @@ grid-template-columns: repeat(2, 1fr);
 grid-gap: 5px;
   float: left;
   font-size: 1.4vw;
+  width: 100%;
 }
 .options ul li a {
   padding: 3px;
@@ -375,7 +376,7 @@ margin-right: 10px;
     font-size: 16px;
   }
   h1{
-    font-size: 40pt;
+    font-size: 50pt;
   }
   h2 {
     font-size: 20pt;
