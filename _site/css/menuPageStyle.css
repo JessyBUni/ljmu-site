@@ -20,7 +20,7 @@ background-color: #C1CED6;
 font-family: 'Varela Round', sans-serif;
 }
 h1 {
-  font-size:  40pt;
+
   font-family: 'Permanent Marker', cursive;
   padding-left: 10pt;
   padding-right: 10pt;
@@ -29,7 +29,7 @@ h1 {
 h2 {
   padding-left: 10pt;
   padding-right: 10pt;
-  font-size: 20pt;
+  font-size: 2.5vw;
 
 }
 h3 {
@@ -149,6 +149,7 @@ top: calc(0% + 80px);
   padding-bottom: 10px;
   font-size: 3.5vw;
 }
+
 .sidePanel ul li a{
   padding-left:  10px;
   font-size: 1.4vw;
@@ -177,6 +178,7 @@ grid-gap: 5px;
   padding: 3px;
 
 }
+
 .options ul a:hover {
   /*background-color: #282828;*/
   color:#FF0000;
@@ -362,4 +364,20 @@ margin-right: 10px;
   border-radius: 10px;
   display: block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}@media screen and (min-width: 1200px) {
+  .sidePanel h1 {
+     font-size: 40pt;
+  }
+  .sidePanel ul li a{
+    font-size: 16px;
+  }
+  .options ul{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 40pt;
+  }
+  h2 {
+    font-size: 20pt;
+  }
 }
