@@ -236,6 +236,11 @@ font-size: 4vw;
   color: #FF0000;
   background-color: #282828;
 }
+.menuHeader :hover{
+  
+  color: white;
+
+}
 .selectedMenuHeader{
   color: white;
   background-color: #C1CED6;
